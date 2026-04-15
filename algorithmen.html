@@ -1,0 +1,102 @@
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorithmen</title>
+    <style>
+        body {
+            background-image: url('hintergrund.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 20px;
+            font-family: "Verdana", sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px 0;
+        }
+
+        .box {
+            width: 95%;
+            max-width: 1000px;
+            min-height: auto;
+            background-color: rgba(199, 235, 255, 0.7);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), inset 0 2px 5px rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container_b {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .textfeld {
+            flex: 1 1 500px;
+        }
+
+        .bildtext {
+            flex: 0 1 200px;
+            text-align: left;
+            font-size: 12px;
+            font-family: "Verdana", sans-serif;
+        }
+
+        .bildtext img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .text {
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .ueberschrift { font-size: 1.5em; margin-bottom: 10px !important; }
+        .color { color: rgb(45, 84, 42); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1 class="text ueberschrift color">Algorithmen</h1>
+          
+        <p class="text">Man kann den Algorithmus als eine Art <strong class="color">Werbestrategie</strong> sehen. Durch den Algorithmus kann der <strong class="color">personalisierte Musikgeschmack</strong> bestimmt werden. Er empfiehlt dem Hörer Musik,die zu seinem üblichen Stil passt (Abb. 1). <br> Durch personalisierte Musik wird der Hörer dazu gebracht, den <strong class="color">Streaming-Dienst</strong> weiter zu nutzen. Letztendlich macht dadurch auch das IT-Unternehmen Gewinn.</p> 
+
+        <p class="text">In der heutigen Zeit ist nicht mehr entscheidend wie viel gepostet wird, sondern hauptsächlich <strong class="color">WAS</strong>. Ziel eines Musikschaffenden ist es, den Algorithmus für sich arbeiten zu lassen. Dabei liefern  IT-Unternehmen detaillierte Analysetools, um zu bestimmen, was den Algorithmus stark beeinflusst.</p> 
+        <div class="container_b">
+        <div class="textfeld">
+          <p></p>
+        <p class="text"><strong>Ein Beispiel wie Spotify den Algorithmus analysiert:</strong></p>
+
+        <p class="text"><strong class="color">1. Save Rate:</strong> Wie viele Hörer:innen speichern den Song in ihre Bibliothek?</p> 
+
+        <p class="text"><strong class="color">2. Stream-to-Listener-Ratio:</strong> Wie oft hören Hörer:innen den Song mehrfach?</p> 
+
+        <p class="text"><strong class="color">3. Skip Rate:</strong> Wie viele brechen innerhalb der ersten 30 Sekunden ab?</p>
+
+        <p class="text"><strong class="color">4. Listen Duration:</strong> Wie lange bleibt der Song im Durchschnitt aktiv?</p>
+
+        <p class="text"><strong class="color">5. External Traffic:</strong> Kommt das Publikum von Social Media oder Playlists?</p>
+        </div>
+        <div class="bildtext">
+        <img src="personalisierung.jpg" alt="Personalisierung">
+        <br>Abb.1 
+        </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

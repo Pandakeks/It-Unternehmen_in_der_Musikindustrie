@@ -1,0 +1,233 @@
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT-Firmen in der Musikindustrie</title>
+</head>
+<style>
+  body {
+    background-image: url('hintergrund.jpg');
+    background-repeat: no-repeat; /* Verhindert Wiederholung */
+    background-attachment: fixed; /* Bild bleibt beim Scrollen fest */
+    background-size: cover; /* Bild füllt den ganzen Bildschirm */
+    background-position: center; /* Bild zentrieren */
+    margin: 0;
+    padding: 20px;
+    font-family: "Verdana", sans-serif;
+  }
+
+  .alles{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: rgba(0, 0, 0, 1);
+  }
+
+  .oberebox{
+  width: 900px;
+  height: 100px; 
+  /* halb transparente Farbe */
+  background-color: rgba(199, 235, 255, 0.7);
+
+  /* hebt das Viereck vom Hintergrund ab */
+  backdrop-filter: blur(10px);
+  box-shadow: 
+    0 10px 20px rgba(0, 0, 0, 0.5),   /* äußerer Schatten */
+    inset 0 2px 5px rgba(255, 255, 255, 0.7); /* inneres Highlight */
+
+  /* leichte 3D-Wirkung */
+  border-radius: 10px;
+  transform: perspective(500px) rotateX(0deg);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;  /* Wichtig: Erlaubt Umbruch bei Platzmangel */
+  justify-content: center; 
+  align-items: stretch;  /* Sorgt dafür, dass alle Boxen gleich hoch sind! */
+  gap: 40px; /* Abstand zwischen den Vierecken */
+  /*height: 420px; /* Optional: Höhe des Containers festlegen */
+}
+
+.hauptbox {
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  gap: 40px;
+  width: 1168px;
+  height: 300px;
+  margin: 0 auto; 
+  background-color: rgba(199, 235, 255, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 
+    0 10px 20px rgba(0, 0, 0, 0.5),   
+    inset 0 2px 5px rgba(255, 255, 255, 0.7); 
+
+  border-radius: 10px;
+  transform: perspective(500px) rotateX(0deg);            
+}
+
+.boxen{
+  flex: 1 1 262px;  
+  max-width: 262px;     /* Wachsen, Schrumpfen, Basisbreite 200px */
+  min-height: fit-content; /* Box wächst mit dem Inhalt mit */
+  padding: 15px; 
+  background-color: rgba(199, 235, 255, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 
+    0 10px 20px rgba(0, 0, 0, 0.5),   
+    inset 0 2px 5px rgba(255, 255, 255, 0.7); 
+
+  border-radius: 10px;
+  transform: perspective(500px) rotateX(0deg);
+}
+
+.text{
+  padding: 20px;
+
+  font-family: "Verdana", sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+
+.textfeld{
+  width: 688px;
+  height: 300px;
+  color: rgba(red, green, blue, 1);  
+}
+
+.ueberschrift{
+  text-align: center;
+}
+
+.zraum{
+  width: 1250px;
+  height: 15px;
+
+  background-color: rgba(0, 0, 0, 0.0);
+  margin: 0 auto;
+}
+
+.link{
+  color:#565656;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: blue;
+}
+
+.linie{
+  border-color: #000000;
+  border-width: 40%;
+}
+
+.verlinken{
+font-style: italic;
+color:#a50000;
+}
+
+.unterueberschrift{
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.einfuehrung{
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.color_cloudcomp{
+  color:#303d72d8;
+}
+
+.color_algortihm{
+  color: rgb(45, 84, 42);
+}
+
+.color_auswirkungen{
+  color:#9a5c0d;
+}
+
+.color_quellen{
+  color:#565656;
+}
+
+</style>
+<div class="zraum"></div>    
+<div class="oberebox">
+    <h1 class="text ueberschrift"> Inwiefern prägen globale IT-Unternehmen die Herstellung und Vermarktung von Musik?
+    </h1>
+</div>
+<div class="zraum"></div>
+<div class="hauptbox">
+    <div class="textfeld">
+      <h2 class="einfuehrung text" >Einführung</h2>
+      <div class="text" style="white-space: pre;">Von den ersten Schallplatten, dem Radio und dem Fernsehen bis hin zu 
+digitalen Streaming - Plattformen. Die Musikindustrie hat eine lange 
+Geschichte hinter sich.
+
+In der heutigen Zeit wird weniger auf physische Tonträger gesetzt, die 
+<strong>digitale Musik</strong> steht im Fokus. Nach dem digitalen Verkauf der 
+Musik folgt die digitale Produktion. Im Zentrum der Musikindustrie stehen 
+Tech-Unternehmen. Ihr Einfluss reicht von der Herstellung bis zum Verkauf. 
+Sie erstellen Algorithmen zur Bestimmung der aktuellen Trends oder 
+bieten digitale Software für die Produktion.
+      </div>
+    </div>
+    <img src="Karikatur.jpeg" alt="Karikatur" width="400" height="260">
+</div>
+<div class="zraum"></div>
+<div class="container">
+  <section class="boxen">
+        <h3 class="text unterueberschrift color_cloudcomp">Cloudcomputing</h3>
+        <p class="text">Die Erzeugung von Musik erfolgt heutzutage meist <strong class="color_cloudcomp">digital</strong>. Das ist aufwändig und erfordert viel Kommunikation zwischen Produzent und Künstler.</p>
+        <p class="text">Das Cloudcomputing bietet dabei eine einfache Möglichkeit zur <strong class="color_cloudcomp">Zusammenarbeit & Kommunikation</strong></p>
+        <p class="text"><a href="cloudcomputing.html" class="verlinken">zu Cloudcomputing</a></p>
+  </section> 
+
+  <section class="boxen">
+        <h4 class="text unterueberschrift color_algortihm">Algorithmen</h4>
+        <p class="text">Algortihmen sind ein gängiges Mittel zur Erhebung von Daten in der Musikindustrie.</p>
+        <p class="text">Sie geben Informationen über die Nutzung von Musik. Dadurch kann die Musikproduktion dem aktuellen <strong class="color_algortihm">Geschmack</strong> und den <strong class="color_algortihm">Wünschen</strong> der Nutzer angepasst werden.</p>
+        <p class="text"><a href="algorithmen.html" class="verlinken">zu Algorithmen</a></p>
+  </section>
+
+  <section class="boxen">
+        <h5 class="text unterueberschrift color_auswirkungen">Auswirkungen</h5>
+        <p class="text">Die Musik durchläuft einen <strong class="color_auswirkungen">gigantischen Wandel</strong>. Sowohl in physischen Tonträgern, als auch bei der Herstellung und Vermarktung.</p>
+        <p class="text">Seitdem große <strong class="color_auswirkungen">IT-Unternehmen</strong> eine wichtige Rolle spielen, gibt es schnell <strong class="color_auswirkungen">enorme Auswirkungen</strong>.</p>
+        <p class="text"><a href="auswirkung.html" class="verlinken">zu Auswirkungen</a></p>
+  </section>
+    
+    <section class="boxen">
+        <h6 class="text unterueberschrift color_quellen">Quellen</h6>
+        <div class="text" style="white-space: pre;">Textquellen:
+          
+<a href="https://www.amazona.de/community/spotify-2024-1000-streams-pro-song-um-geld-zuverdienen/ " target="_blank" class="link">Amazona.de</a>
+<a href="https://www.deutschlandfunkkultur.de/die-mehrheit-der-musiker-in-deutschland-verdientkaum-am-streaming-100.html" target="_blank" class="link">Deutschlandfunkkultur.de</a>
+<a href="https://icnet.de/der-einfluss-der-digitalisierung-auf-die-musikindustrie/" target="_blank" class="link">Icnet.de</a>
+<a href="https://musicalligator.com/de/blog/der-algorithmus-von-spotify/" target="_blank" class="link">Musicalligator.com</a>
+<a href="https://www.gema.de/de/aktuelles/streaming" target="_blank" class="link">Gema.de</a>
+
+
+Bildquellen:
+
+<a href="https://miz.org/de/statistiken/version/2023-umsatz-aus-digitalen-musikverkaeufen" target="_blank" class="link">Cloudcomputing (Umsatz)</a>
+<a href="https://www.jokerz22.de/blogs/welcome-to-my-blog/einfluss-von-social-media-fuer-musiker?srsltid=AfmBOoo2nTgytvNtZ54p2j71SzgcUAiWQYMSjoBcvg_ps9IAg1idlZqZ" target="_blank" class="link">Auswirkungen (Streaming 
+Dienste)</a>
+        </div>
+      </section>
+
+    
+</div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudcomputing</title>
+    <style>
+        body {
+            background-image: url('hintergrund.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 20px;
+            font-family: "Verdana", sans-serif;
+        }
+
+        /* Container für die gesamte Box */
+        .container {
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+
+        .box {
+            width: 100%;
+            max-width: 1000px; /* Wird nie breiter als 1000px */
+            min-height: auto;   /* Wächst mit dem Inhalt mit */
+            
+            background-color: rgba(199, 235, 255, 0.7);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), inset 0 2px 5px rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box; /* Wichtig, damit Padding die Box nicht vergrößert */
+        }
+
+        /* Der obere Bereich (Text links, Bild rechts) */
+        .container_b {
+            display: flex;
+            flex-wrap: wrap; /* Erlaubt dem Bild, unter den Text zu rutschen, wenn es zu eng wird */
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .textfeld {
+            flex: 1 1 500px; /* Nimmt Platz ein, bricht ab 500px Breite um */
+        }
+
+        .bild-container {
+            flex: 0 1 397px;
+            text-align: center;
+        }
+
+        .bild-container img {
+            max-width: 100%; /* Bild schrumpft automatisch mit */
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .text {
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .ueberschrift {
+            font-size: 25px;
+            margin-top: 0;
+        }
+
+        .color {
+            color: #303d72d8;
+        }
+
+        .bildtext-label {
+            display: block;
+            font-size: 12px;
+            margin-top: 8px;
+        }
+
+        /* Kleiner Abstandhalter oben/unten */
+        .zraum {
+            height: 2.5vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="zraum"></div>
+    <div class="container">
+        <div class="box">
+            <div class="container_b">
+                <div class="textfeld">
+                    <h1 class="text ueberschrift color">Cloudcomputing</h1>
+                    <p class="text">Die größten Einnahmen in der Musikindustrie gehen aus Streaming und <strong class="color">digitaler Musik</strong> hervor (Abb.1 - Umsatz). Es wird ebenso immer populärer, Musik auch digital zu erstellen. Dafür gibt es viele unterschiedliche Methoden. </p>
+                    <p class="text">Eine Methode ist das <strong class="color">Cloudcomputing</strong>:<br> 
+                    Cloudcomputing funktioniert <strong class="color">online</strong>, also in der "Cloud". Die IT-Unternehmen stellen dabei die <strong class="color">Ressourcen</strong>, wie Rechenleistung, Speicherplatz und auch die Software im Internet bereit.</p>
+                </div>
+                
+                <div class="bild-container">
+                    <img src="umsatz.jpg" alt="Umsatz">
+                    <span class="bildtext-label">Abb.1 - Umsatz durch digitale Musik</span>
+                </div>
+            </div>
+
+            <p class="text">Das ermöglicht <strong class="color">virtuelles Arbeiten</strong> und eine flexible IT-Infrastruktur, was sich kosteneffizient auswirkt.</p>
+            <p class="text">Vorteilhaft ist die <strong class="color">Skalierbarkeit</strong> der Ressourcen. Wenn beispielsweise mehr Speicherplatz benötigt wird, muss nicht extra in die nötige Hardware investiert werden. Er kann einfach über das Unternehmen "bestellt" werden. Das macht das arbeiten auch flexibler.</p>
+            <p class="text">Cloudcomputing ist <strong class="color">kosteneffizient</strong>, da keine Kosten für die Beschaffung und Wartung einer Serverstruktur anfallen.</p>
+            <p class="text">Die <strong class="color">Zusammenarbeit</strong> zwischen Produzent und Künstler kann effiziente gestaltet werden. Da die Musik online erstellt wird, ist niemand an einen Ort gebunden. Sie können von der ganzen Welt aus darauf zugreifen und in <strong class="color">Echtzeit</strong> zusammenarbeiten.</p>
+            <p class="text">Ein Problem könnte die <strong class="color">Sicherheit</strong> der Daten darstellen. Zwar sind die Dateien von der IT des Unternehmens geschützt, jedoch birgt es <strong class="color">immer</strong> ein Risiko etwas ins Internet zu stellen.</p>
+        </div>
+    </div>
+    <div class="zraum"></div>
+</body>
+</html>

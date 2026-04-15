@@ -1,0 +1,85 @@
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auswirkungen</title>
+    <style>
+        body {
+            background-image: url('hintergrund.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            margin: 0;
+            padding: 20px;
+            font-family: "Verdana", sans-serif;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* Oben ausrichten, damit Box wachsen kann */
+            min-height: 100vh;
+            padding: 20px 0;
+        }
+
+        .box {
+            width: 95%;
+            max-width: 1000px;
+            min-height: auto; /* Wächst mit Inhalt */
+            background-color: rgba(199, 235, 255, 0.7);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), inset 0 2px 5px rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .container_b {
+            display: flex;
+            flex-wrap: wrap; /* Bild rutscht bei Platzmangel nach unten */
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .textfeld {
+            flex: 1 1 600px; /* Nimmt Platz ein, bricht bei 600px Breite um */
+        }
+
+        .box img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .text {
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .ueberschrift { font-size: 25px; }
+        .unterueberschrift { font-size: 20px; margin-top: 15px !important; }
+        .color { color: #9a5c0d; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h1 class="text ueberschrift color">Auswirkungen</h1>
+          <div class="container_b">
+            <div class="textfeld">
+            <p class="text">Der Einfluss von Tech-Unternehmen hat die Musikindustrie verändert. Während früher physische Tonträger wie CDs =und LPs dominierten, bevorzugt die heutige Mehrheit <strong class="color">Streaming-Plattformen und Social Media</strong>. Dies bringt sowohl Chancen als auch Risiken mit sich.</p>
+            </div>
+            <img src="auswirkungen_bild.webp" alt="auswirkungen_bild" width="266px">
+        </div>
+          <h2 class="text unterueberschrift">Die besondere Rolle des Algorithmus:</h2>
+          <p class="text">Newcomer können ihre Songs weltweit ohne die Unterstützung eines großen Musiklabels veröffentlichen. Plattformen wie TikTok, Instagram und YouTube verbreiten <strong class="color">Trends</strong> in <strong class="color">kurzer Zeit</strong> und ermöglichen eine direkte Verbindung zur Zielgruppe.</p>
+          <h3 class="text unterueberschrift">Der Schatten der Abhängigkeit:</h3>
+          <p class="text">Ein großes Problem stellt die <strong class="color">zunehmende Abhängigkeit</strong> von den Plattformen dar. Werden Pausen beim Posten erstellt, dann sinkt die Reichweite. Zudem besitzen die TechUnternehmen ein <strong class="color">(Daten-) Monopol</strong> über das Hörverhalten. Von besonderer Bedeutung ist die finanzielle Situation: Eine ungleiche Verteilung der Einnahmen ist erkennbar, denn ca. 75% der Umsätze gehen auf nur 0,1% der Künstler*innen zurück. Des Weiteren müssen seit 2024 Songs min. 1.000-mal pro Jahr gestreamt werden, bevor Spotify überhaupt Auszahlungen berechnet.</p>
+          <h4 class="text unterueberschrift">Kulturelle Folgen:</h4>
+          <p class="text">Auch die Musik selbst verändert sich. Das <strong class="color">Musikerlebnis</strong> wird beeinträchtigt, durch die Erstellung von Kurzvideos <strong class="color">sinkt die Aufmerksamkeitsspanne</strong> der Hörerinnen. Positiv ist hingegen der Versuch, dass Nutzerinnen andere Geschmäcker entwickeln können. Durch Streaming-Dienste ist jede Musikrichtung überall und für jeden erhältlich, was einen Genuss ohne Grenzen ermöglicht.</p>
+        </div>
+    </div>
+</body>
+</html>
