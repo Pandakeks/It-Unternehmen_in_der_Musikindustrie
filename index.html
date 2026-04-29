@@ -26,18 +26,16 @@
   }
 
   .oberebox{
-  width: 900px;
-  height: 100px; 
-  /* halb transparente Farbe */
+  width: 90%;              /* statt 900px */
+  max-width: 900px;        /* begrenzt auf ursprüngliche Größe */
+  min-height: 100px;       /* statt fester Höhe */
+  
   background-color: rgba(199, 235, 255, 0.7);
-
-  /* hebt das Viereck vom Hintergrund ab */
   backdrop-filter: blur(10px);
   box-shadow: 
-    0 10px 20px rgba(0, 0, 0, 0.5),   /* äußerer Schatten */
-    inset 0 2px 5px rgba(255, 255, 255, 0.7); /* inneres Highlight */
+    0 10px 20px rgba(0, 0, 0, 0.5),
+    inset 0 2px 5px rgba(255, 255, 255, 0.7);
 
-  /* leichte 3D-Wirkung */
   border-radius: 10px;
   transform: perspective(500px) rotateX(0deg);
   
@@ -45,6 +43,7 @@
   justify-content: center;
   align-items: center;  
   margin: 0 auto;
+  padding: 10px;          /* etwas Luft für kleine Screens */
 }
 
 .container {
@@ -61,9 +60,15 @@
   justify-content: center; 
   align-items: center;
   gap: 40px;
-  width: 1168px;
-  height: 300px;
+
+  width: 95%;             /* statt 1168px */
+  max-width: 1168px;      /* ursprüngliche Grenze */
+  min-height: 300px;      /* statt fester Höhe */
+  flex-wrap: wrap;        /* wichtig für kleinere Bildschirme */
+
   margin: 0 auto; 
+  padding: 15px;
+
   background-color: rgba(199, 235, 255, 0.7);
   backdrop-filter: blur(10px);
   box-shadow: 
@@ -99,9 +104,9 @@
 }
 
 .textfeld{
-  width: 688px;
-  height: 300px;
-  color: rgba(red, green, blue, 1);  
+  width: 100%;        /* statt 688px */
+  max-width: 688px;
+  height: auto;       /* wichtig für Responsive */
 }
 
 .ueberschrift{
