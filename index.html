@@ -55,16 +55,24 @@
   /*height: 420px; /* Optional: Höhe des Containers festlegen */
 }
 
+.container_hauptbox {
+  display: flex;
+  flex-wrap: wrap; /* Erlaubt dem Bild, unter den Text zu rutschen, wenn es zu eng wird */
+  gap: 20px;
+  align-items: flex-start;
+}
+
 .hauptbox {
   display: flex; 
   justify-content: center; 
   align-items: center;
   gap: 40px;
 
-  width: 95%;             /* statt 1168px */
-  max-width: 1168px;      /* ursprüngliche Grenze */
-  min-height: 300px;      /* statt fester Höhe */
-  flex-wrap: wrap;        /* wichtig für kleinere Bildschirme */
+  flex: 1 1 1168px;        
+  max-width: 1168px;  
+  min-width: fit-content;    
+  min-height: fit-content;      
+  flex-wrap: wrap;        
 
   margin: 0 auto; 
   padding: 15px;
@@ -81,7 +89,7 @@
 
 .boxen{
   flex: 1 1 262px;  
-  max-width: 262px;     /* Wachsen, Schrumpfen, Basisbreite 200px */
+  max-width: 262px;     /* Wachsen, Schrumpfen, Basisbreite 262px */
   min-height: fit-content; /* Box wächst mit dem Inhalt mit */
   padding: 15px; 
   background-color: rgba(199, 235, 255, 0.7);
@@ -92,6 +100,17 @@
 
   border-radius: 10px;
   transform: perspective(500px) rotateX(0deg);
+}
+
+.bild-container {
+  flex: 0 1 400px;
+  text-align: center;
+}
+
+.bild-container img {
+  max-width: 100%; /* Bild schrumpft automatisch mit */
+  height: auto;
+  border-radius: 5px;
 }
 
 .text{
@@ -173,23 +192,16 @@ color:#a50000;
     </h1>
 </div>
 <div class="zraum"></div>
-<div class="hauptbox">
+<section class="hauptbox">
     <div class="textfeld">
       <h2 class="einfuehrung text" >Einführung</h2>
-      <div class="text" style="white-space: pre;">Von den ersten Schallplatten, dem Radio und dem Fernsehen bis hin zu 
-digitalen Streaming - Plattformen. Die Musikindustrie hat eine lange 
-Geschichte hinter sich.
-
-In der heutigen Zeit wird weniger auf physische Tonträger gesetzt, die 
-<strong>digitale Musik</strong> steht im Fokus. Nach dem digitalen Verkauf der 
-Musik folgt die digitale Produktion. Im Zentrum der Musikindustrie stehen 
-Tech-Unternehmen. Ihr Einfluss reicht von der Herstellung bis zum Verkauf. 
-Sie erstellen Algorithmen zur Bestimmung der aktuellen Trends oder 
-bieten digitale Software für die Produktion.
-      </div>
-    </div>
-    <img src="images/Karikatur.jpeg" alt="Karikatur" width="400" height="260">
-</div>
+        <p class="text">Von den ersten Schallplatten, dem Radio und dem Fernsehen bis hin zu digitalen Streaming - Plattformen. Die Musikindustrie hat eine lange Geschichte hinter sich.</p>
+        <p class="text">In der heutigen Zeit wird weniger auf physische Tonträger gesetzt, die <strong>digitale Musik</strong> steht im Fokus. Nach dem digitalen Verkauf der Musik folgt die digitale Produktion. Im Zentrum der Musikindustrie stehen Tech-Unternehmen. Ihr Einfluss reicht von der Herstellung bis zum Verkauf. Sie erstellen Algorithmen zur Bestimmung der aktuellen Trends oder bieten digitale Software für die Produktion.</p>
+  </div>
+  <div class="bild-container">
+    <img src="images/Karikatur.jpeg" alt="Karikatur">
+  </div>
+</section>
 <div class="zraum"></div>
 <div class="container">
   <section class="boxen">
